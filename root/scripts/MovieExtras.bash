@@ -41,7 +41,7 @@ fi
 
 if [ ! -f "/config/logs/MovieExtras.txt" ]; then
     touch "/config/logs/MovieExtras.txt"
-    chmod 777 "/config/logs/MovieExtras.txt"
+    chmod 664 "/config/logs/MovieExtras.txt"
 fi
 exec &> >(tee -a "/config/logs/MovieExtras.txt")
 
@@ -182,7 +182,7 @@ do
 
         if [ ! -d "$finalPath" ]; then
             mkdir -p "$finalPath"
-            chmod 777 "$finalPath"
+            chmod 664 "$finalPath"
         fi
 
 
