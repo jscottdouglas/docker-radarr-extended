@@ -20,7 +20,7 @@ fi
 
 if [ ! -f "/config/logs/AutoExtras.txt" ]; then
     touch "/config/logs/AutoExtras.txt"
-    chmod 664 "/config/logs/AutoExtras.txt"
+#    chmod 664 "/config/logs/AutoExtras.txt"
 fi
 exec &> >(tee -a "/config/logs/AutoExtras.txt")
 
