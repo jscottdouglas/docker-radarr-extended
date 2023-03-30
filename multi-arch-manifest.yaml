@@ -1,15 +1,15 @@
-image: jscottdouglas/radarr-extended:latest
+image: jscottdouglas/docker-radarr-extended:latest
 manifests:
-  - image: jscottdouglas/radarr-extended:amd64
+  - image: jscottdouglas/docker-radarr-extended:amd64
     platform:
       architecture: amd64
       os: linux
-  - image: jscottdouglas/radarr-extended:arm32v7
+  - image: jscottdouglas/docker-radarr-extended:arm32v7
     platform:
       architecture: arm
       os: linux
       variant: v7
-  - image: jscottdouglas/radarr-extended:arm64v8
+  - image: jscottdouglas/docker-radarr-extended:arm64v8
     platform:
       architecture: arm64
       os: linux
