@@ -44,12 +44,12 @@ if [  -f "/config/extended/scripts/QueueCleaner.bash" ]; then
 fi
 echo "Downloading and setting up QueueCleaner.bash"
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/QueueCleaner.bash" -o "/config/extended/scripts/QueueCleaner.bash"
-chmod 777 "/config/extended/scripts/QueueCleaner.bash"
+chmod +x "/config/extended/scripts/QueueCleaner.bash"
 
 # set permissions
-chmod 777 -R /usr/local/sma
-find /config/extended -type d -exec chmod 777 {} \;
-find /config/extended -type f -exec chmod 666 {} \;
-chmod -R 777 /config/extended/scripts
+#chmod 777 -R /usr/local/sma
+#find /config/extended -type d -exec chmod 777 {} \;
+#find /config/extended -type f -exec chmod 666 {} \;
+#chmod -R 777 /config/extended/scripts
 echo "Complete..."
 exit
